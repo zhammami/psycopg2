@@ -13,6 +13,13 @@ python:
   - 3.3
   - 3.2
 
+env:
+  - PGVERSION: 9.6
+  - PGVERSION: 9.5
+  - PGVERSION: 9.4
+  - PGVERSION: 9.3
+  - PGVERSION: 9.2
+
 install:
   - python setup.py install
   - sudo scripts/travis_prepare.sh
